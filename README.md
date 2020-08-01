@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 # Tebeepetshop
 
 This project was generated with [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket/)
@@ -141,4 +143,8 @@ Development, build and quality processes are based on [angular-cli](https://gith
 - [Working behind a corporate proxy](docs/corporate-proxy.md)
 - [Updating dependencies and tools](docs/updating.md)
 - [Using a backend proxy for development](docs/backend-proxy.md)
-- [Browser routing](docs/routing.md)
+- # [Browser routing](docs/routing.md)
+
+# petshop
+
+> > > > > > > 02395b25cabcc9a552144bbf21a7fcd06250da5f

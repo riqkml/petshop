@@ -1,0 +1,26 @@
+//line container
+.right-section {
+  background-color: green($color: #000000);
+}
+//ellipsis judul produk 2 line
+.left-section-title-ellipsis {
+  display: block;
+  color: red($color: #000000);
+  display: -webkit-box;
+  max-width: 100%;
+  height: 33px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.title-card-production {
+  text-align: right;
+}
+//warna font harga
+.text-price {
+  color: #fa591d;
+}

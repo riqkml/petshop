@@ -1,8 +1,53 @@
 <div class="container-fluid">
-  <div class="jumbotron text-center">
-    <h1>
-      <span translate>APP_NAME</span>
-    </h1>
-    <p><i class="far fa-bookmark"></i> <span translate>Version</span> {{ version }}</p>
+  <div class="row">
+    <div class="col-9 row">
+      <div class="col-3" *ngFor="let product of dataDummy" style="padding: 0.5%;">
+        <div class="card" style="text-overflow: ellipsis; height: 100%;">
+          <img class="card-img-top" src="../../assets/{{ product.image }}" alt="Card image" />
+          <div class="card-body">
+            <h5 class="left-section-title-ellipsis card-title">
+              {{ product.name }}
+            </h5>
+            <p>
+              <b class="text-price">Rp {{ product.price }}</b
+              ><br />
+              <small style="color: #a6a7aa;">Stok barang ({{ product.stok }})</small><br />
+              <span class="badge badge-pill badge-success">{{ product.category }}</span>
+            </p>
+            <a href="#" class="btn btn-primary">Add product +</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card" style="height: 85vh;">
+        <div
+          class="card-header"
+          style="
+            background: #1e3c72; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2a5298, #1e3c72); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2a5298, #1e3c72);
+          "
+        >
+          <h6 style="text-align: center; color: white;">Keranjang Belanja</h6>
+        </div>
+        <div class="card-body" style="background-color: #f3f4f5;"></div>
+        <div class="row" style="height: 10vh; padding: 2%;">
+          <div class="col-6">
+            <h6 class="title-card-production">
+              Total Barang :
+            </h6>
+            <h6 class="title-card-production">
+              Total Harga :
+            </h6>
+          </div>
+          <div class="col-6">
+            <h6 class="title-card-production">20</h6>
+            <h6 class="text-price title-card-production">Rp 0</h6>
+          </div>
+        </div>
+        <button type="button" class="btn btn-success">Success</button>
+      </div>
+    </div>
   </div>
 </div>
